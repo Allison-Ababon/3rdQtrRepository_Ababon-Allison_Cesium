@@ -1,0 +1,31 @@
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: white;
+}
+
+form {
+    width: 900px;
+    margin: 30px auto;
+    margin-top: 260px;
+    padding: 20px;
+    background-image: linear-gradient(rgb(255, 228, 239), rgb(255, 246, 249));
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(247, 108, 155);
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid rgb(247, 108, 155);
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 7px;
+    color: rgb(216, 70, 119);
+    text-shadow: 0 0 10px white;
+}
+
+input {
+    color: grey;
+}
