@@ -1,62 +1,74 @@
-<!DOCYPTE html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mah Club Application</title>
+    <link rel="stylesheet" href="Q3_2G_styles.css" />
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Mah Club Application</title>
-        <link rel="stylesheet" href="Q3_2G_styles.css">
-    </head>
+  <body>
+    <form method="post" onsubmit="return confirmSubmit()" onreset="return confirmReset()">
+      <fieldset>
+        <legend>Personal Information</legend>
 
-    <body>
-        <form method="post"action="submit"onsubmit="return confirmSubmit()"onreset="return confirmReset()">
-            
-            <fieldset>
-                <legend>Personal Information</legend>
+        <label>Student ID: <input type="number" name="studentID" required /></label>
+        <label>
+          Full Name:
+          <input type="text" name="fullname" required onblur="checkEmpty(this)" />
+        </label>
+        <label>Birthday: <input type="date" name="birthday" required /></label>
+        <br />
+        <label>Email Address: <input type="email" name="email" required /></label>
+      </fieldset>
 
-                <label>Student ID: <input type="number" name="studentID" required></label>
-                <label>Full Name: <input type="text" name="fullname" required onblur="checkEmpty(thiS)"></label>
-                <label>Birthday: <input type="date" name="birthday" required></label>
-                <br>
-                <label>Email Address: <input type="email" name="email" required></label>
-            </fieldset>
+      <fieldset>
+        <legend>Organization Details</legend>
 
-            <fieldset>
-                <legend>Organization Details</legend>
+        <label>
+          Grade Level:
+          <select name="grade" required>
+            <option value="">Select Grade</option>
+            <option value="g7">Grade 7</option>
+            <option value="g8">Grade 8</option>
+            <option value="g9">Grade 9</option>
+            <option value="g10">Grade 10</option>
+            <option value="g11">Grade 11</option>
+            <option value="g12">Grade 12</option>
+          </select>
+        </label>
 
-                <label>Grade Level: <select name="grade" required>
-                    <option value="">Select Grade</option>
-                    <option value="g7">Grade 7</option>
-                    <option value="g8">Grade 8</option>
-                    <option value="g9">Grade 9</option>
-                    <option value="g10">Grade 10</option>
-                    <option value="g11">Grade 11</option>
-                    <option value="g12">Grade 12</option>
-                    </select></label>
+        <label>
+          Intern/Extern:
+          <input type="radio" name="status" value="internal" required /> Intern
+          <input type="radio" name="status" value="external" required /> Extern
+        </label>
 
-                <label>Intern/Extern: <input type="radio" name="status" value="internal" required>Intern<input type="radio"name="status"value="external" required>Extern</label>
-                
-<br>
+        <br />
 
-                <label>Preferred Organization/Club:
-                    <select name="club" required>
-                        <option value="">Select Club</option>
-                        <option value="cs">Computron</option>
-                        <option value="likha">Likha</option>
-                        <option value="polvere">Gaming Club</option>
-                        <option value="celluloid">Celluloid</option>
-                    </select>
-                </label>
+        <label>
+          Preferred Organization/Club:
+          <select name="club" required>
+            <option value="">Select Club</option>
+            <option value="cs">Computron</option>
+            <option value="likha">Likha</option>
+            <option value="polvere">Gaming Club</option>
+            <option value="celluloid">Celluloid</option>
+          </select>
+        </label>
 
-                <label>Why do you want to join?<textarea name="reason" required onblur="checkEmpty(this)"></textarea></label>
+        <label>
+          Why do you want to join?
+          <textarea name="reason" required onblur="checkEmpty(this)"></textarea>
+        </label>
+      </fieldset>
 
-            </fieldset>
+      <div class="buttons">
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+        <input type="button" value="View Signups" onclick="goToViewSignups()" />
+      </div>
+    </form>
 
-            <div class="buttons">
-                <input type="submit" value="Submit">
-                <input type="reset" value="Reset">
-            </div>
-
-        </form>
-    </body>
-
+    <script src="signup.js"></script>
+  </body>
 </html>

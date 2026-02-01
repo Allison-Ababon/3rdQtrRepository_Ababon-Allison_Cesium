@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>View Sign-ups</title>
+    <link rel="stylesheet" href="Q3_2G_styles.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <h1>Show List of Students Who Signed-Up</h1>
+
+      <p>
+        <a href="Q3_2GCesiumAbabon.html">Back to Signup</a>
+      </p>
+
+      <div class="controls">
+        <label for="clubFilter"><strong>Select Your Club</strong></label>
+        <select id="clubFilter">
+          <option value="ALL">ALL</option>
+          <option value="cs">Computron</option>
+          <option value="likha">Likha</option>
+          <option value="polvere">Gaming Club</option>
+          <option value="celluloid">Celluloid</option>
+        </select>
+      </div>
+
+      <p class="total">
+        Total Signup: <span id="totalCount">0</span>
+      </p>
+
+      <p id="message" class="message" role="status"></p>
+
+      <div class="tableWrap">
+        <table id="signupsTable">
+          <thead>
+            <tr>
+              <th>Club</th>
+              <th>ID</th>
+              <th>Fullname</th>
+              <th>Grade</th>
+              <th>Email</th>
+              <th>Intern/Extern</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="viewSignUps.js"></script>
+  </body>
+</html>

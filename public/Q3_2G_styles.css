@@ -29,3 +29,52 @@ legend {
 input {
     color: grey;
 }
+
+.page {
+    width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-image: linear-gradient(rgb(255, 228, 239), rgb(255, 246, 249));
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(247, 108, 155);
+}
+  
+.controls {
+    margin: 12px 0;
+}
+  
+#clubFilter {
+    margin-left: 10px;
+    padding: 4px 8px;
+}
+  
+.tableWrap {
+    overflow-x: auto;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+  
+th,td {
+    border: 1px solid rgb(247, 108, 155);
+    padding: 8px;
+}
+  
+th {
+    color: rgb(216, 70, 119);
+    background: rgba(255, 255, 255, 0.6);
+}
+  
+.message {
+    margin-top: 10px;
+    font-weight: bold;
+    color: rgb(216, 70, 119);
+}
+  
+.total {
+    margin: 6px 0;
+}
+  
